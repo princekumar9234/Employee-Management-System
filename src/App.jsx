@@ -1,13 +1,11 @@
 import React from 'react'
-import Login from './Components/Login'
-import EmployPanel from './Components/DashBoard/EmployPanel'
+import Control from './Components/Control'
 
 
 const App = () => {
   return (
     <div className='bg-black text-white'>
-    {/* <Login/> */}
-    <EmployPanel/>
+   <Control/>
     </div>
   )
 }
