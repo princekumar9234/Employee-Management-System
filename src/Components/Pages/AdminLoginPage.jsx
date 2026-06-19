@@ -22,7 +22,7 @@ const AdminLoginPage = () => {
   };
 
   return (
-      <div className=" h-screen">
+      <div className=" h-screen ">
         <form
           className="lg:flex w-full justify-between p-10"
           onSubmit={(e) => {
@@ -38,7 +38,7 @@ const AdminLoginPage = () => {
               }}
               type="text"
               placeholder="Make a UI design"
-              className="outline-none p-2 px-3 border-2 rounded-xl placeholder:text-gray-200 border-emerald-400 "
+              className="outline-none p-1 px-3 border-2 rounded-lg placeholder:text-gray-200  "
             />
             <h3>Date:</h3>
             <input
@@ -47,7 +47,7 @@ const AdminLoginPage = () => {
                 setDate(elem.target.value);
               }}
               type="date"
-              className="outline-none p-2 px-3 border-2 rounded-xl placeholder:text-gray-200 border-emerald-400 "
+              className="outline-none p-1 px-3 border-2 rounded-lg placeholder:text-gray-200  "
               
             />
 
@@ -58,7 +58,7 @@ const AdminLoginPage = () => {
                 setAssign(elem.target.value);
               }}
               type="text"
-              className="outline-none p-2 px-3 border-2 rounded-xl placeholder:text-gray-200 border-emerald-400 "
+              className="outline-none p-1 px-3 border-2 rounded-lg placeholder:text-gray-200  "
               
             />
 
@@ -70,7 +70,7 @@ const AdminLoginPage = () => {
               }}
               type="text"
               placeholder="Design,Development,etc"
-              className="outline-none p-2 px-3 border-2 rounded-xl placeholder:text-gray-200 border-emerald-400 "
+             className="outline-none p-1 px-3 border-2 rounded-lg placeholder:text-gray-200  "
              
             />
 
@@ -85,13 +85,13 @@ const AdminLoginPage = () => {
                 setDescription(elem.target.value);
               }}
              
-              rows={5}
+              rows={6}
               cols={70}
               placeholder="Detail description of task(make 50 word) "
-              className="outline-none p-2 px-3 border-2 rounded-xl placeholder:text-gray-200 border-emerald-400 "
+              className="outline-none p-2 px-3 border-2 rounded-lg placeholder:text-gray-200  "
 
             ></textarea>
-            <button className="bg-red-500 mt-6 text-2xl py-2   font-bold">
+            <button className="bg-red-500 mt-6 text-2xl py-2  rounded-lg font-bold">
               Create task
             </button>
           </div>

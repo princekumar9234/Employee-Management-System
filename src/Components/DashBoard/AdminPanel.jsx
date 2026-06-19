@@ -6,7 +6,7 @@ const AdminPanel = () => {
  
 
   return (
-    <div className="px-10 py-4">
+    <div className="px-10 py-4 bg-[#1C1C1C]">
       <EmployHeader />
       <AdminLoginPage/>
     </div>
