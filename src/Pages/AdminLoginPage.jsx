@@ -22,7 +22,7 @@ const AdminLoginPage = () => {
   };
 
   return (
-      <div className=" h-screen ">
+      <div className="mt-3 bg-[#1C1C1C]">
         <form
           className="lg:flex w-full justify-between p-10"
           onSubmit={(e) => {

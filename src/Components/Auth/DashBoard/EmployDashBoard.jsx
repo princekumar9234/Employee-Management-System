@@ -5,7 +5,7 @@ import EmpTask from '../Others/EmpTask'
 
 const EmployPanel = () => {
   return (
-    <div className='p-5 bg-[#1C1C1C] h-screen'>
+    <div className='p-5 bg-[#1C1C1C] lg:h-screen'>
       <EmployHeader/>
       <EmpTaskList/>
       <EmpTask/>

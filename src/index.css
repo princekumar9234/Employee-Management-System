@@ -1,9 +1,9 @@
 @import 'tailwindcss';
+
 body{
     background-color: black;
     color: white;
 }
-
 #EmpTask::-webkit-scrollbar {
     display: none;
 }

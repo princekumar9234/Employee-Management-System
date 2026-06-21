@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import AdminLoginPage from "../../../Pages/AdminLoginPage";
+import AllTaskAdmin from '../../../Pages/AllTaskAdmin'
 import EmployHeader from "../Others/EmployHeader";
-import AdminLoginPage from "../Pages/AdminLoginPage";
 
 const AdminPanel = () => {
  
 
   return (
-    <div className="px-10 py-4 bg-[#1C1C1C]">
+    <div className="px-2 py-2 bg-transparent lg:px-4">
       <EmployHeader />
       <AdminLoginPage/>
+    <AllTaskAdmin/>
     </div>
   );
 };
