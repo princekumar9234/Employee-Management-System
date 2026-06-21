@@ -1,7 +1,7 @@
 const employee = [
   {
     id: 1,
-    email: "john.doe@example.com",
+    email: "emp@gmail.com",
     password: "123",
     tasks: [
       {
@@ -12,7 +12,7 @@ const employee = [
         taskTitle: "Design Homepage",
         taskDescription: "Create responsive homepage UI",
         taskDate: "2026-06-21",
-        category: "Design"
+        category: "Design",
       },
       {
         active: false,
@@ -22,7 +22,7 @@ const employee = [
         taskTitle: "Fix Navbar Bug",
         taskDescription: "Resolve navbar alignment issue",
         taskDate: "2026-06-20",
-        category: "Frontend"
+        category: "Frontend",
       },
       {
         active: true,
@@ -32,9 +32,9 @@ const employee = [
         taskTitle: "API Integration",
         taskDescription: "Connect login page with backend API",
         taskDate: "2026-06-22",
-        category: "Backend"
-      }
-    ]
+        category: "Backend",
+      },
+    ],
   },
 
   {
@@ -50,7 +50,7 @@ const employee = [
         taskTitle: "Create Dashboard",
         taskDescription: "Build admin dashboard components",
         taskDate: "2026-06-21",
-        category: "Frontend"
+        category: "Frontend",
       },
       {
         active: false,
@@ -60,7 +60,7 @@ const employee = [
         taskTitle: "Write Documentation",
         taskDescription: "Prepare API documentation",
         taskDate: "2026-06-18",
-        category: "Documentation"
+        category: "Documentation",
       },
       {
         active: false,
@@ -70,7 +70,7 @@ const employee = [
         taskTitle: "Deploy Server",
         taskDescription: "Deploy backend on Render",
         taskDate: "2026-06-19",
-        category: "DevOps"
+        category: "DevOps",
       },
       {
         active: true,
@@ -80,9 +80,9 @@ const employee = [
         taskTitle: "Add Validation",
         taskDescription: "Implement form validation",
         taskDate: "2026-06-22",
-        category: "Backend"
-      }
-    ]
+        category: "Backend",
+      },
+    ],
   },
 
   {
@@ -98,7 +98,7 @@ const employee = [
         taskTitle: "Optimize Database",
         taskDescription: "Improve MongoDB queries",
         taskDate: "2026-06-21",
-        category: "Database"
+        category: "Database",
       },
       {
         active: false,
@@ -108,7 +108,7 @@ const employee = [
         taskTitle: "Update Packages",
         taskDescription: "Upgrade npm dependencies",
         taskDate: "2026-06-17",
-        category: "Maintenance"
+        category: "Maintenance",
       },
       {
         active: true,
@@ -118,9 +118,9 @@ const employee = [
         taskTitle: "Create REST API",
         taskDescription: "Develop employee APIs",
         taskDate: "2026-06-23",
-        category: "Backend"
-      }
-    ]
+        category: "Backend",
+      },
+    ],
   },
 
   {
@@ -136,7 +136,7 @@ const employee = [
         taskTitle: "Testing Login Module",
         taskDescription: "Perform login functionality tests",
         taskDate: "2026-06-21",
-        category: "Testing"
+        category: "Testing",
       },
       {
         active: false,
@@ -146,7 +146,7 @@ const employee = [
         taskTitle: "Fix CSS Issues",
         taskDescription: "Resolve mobile responsiveness bugs",
         taskDate: "2026-06-19",
-        category: "Frontend"
+        category: "Frontend",
       },
       {
         active: false,
@@ -156,9 +156,9 @@ const employee = [
         taskTitle: "Payment Gateway Setup",
         taskDescription: "Integrate Razorpay service",
         taskDate: "2026-06-20",
-        category: "Backend"
-      }
-    ]
+        category: "Backend",
+      },
+    ],
   },
 
   {
@@ -174,7 +174,7 @@ const employee = [
         taskTitle: "Create Profile Page",
         taskDescription: "Build employee profile section",
         taskDate: "2026-06-21",
-        category: "Frontend"
+        category: "Frontend",
       },
       {
         active: false,
@@ -184,7 +184,7 @@ const employee = [
         taskTitle: "Bug Fixing",
         taskDescription: "Fix reported bugs from users",
         taskDate: "2026-06-18",
-        category: "Maintenance"
+        category: "Maintenance",
       },
       {
         active: true,
@@ -194,7 +194,7 @@ const employee = [
         taskTitle: "Implement JWT",
         taskDescription: "Add authentication using JWT",
         taskDate: "2026-06-22",
-        category: "Security"
+        category: "Security",
       },
       {
         active: false,
@@ -204,28 +204,28 @@ const employee = [
         taskTitle: "Cloudinary Upload",
         taskDescription: "Implement image upload feature",
         taskDate: "2026-06-20",
-        category: "Backend"
-      }
-    ]
-  }
+        category: "Backend",
+      },
+    ],
+  },
 ];
 
 const admin = [
   {
     id: 1,
     email: "princechouhan9939@gmail.com",
-    password: "PRINCE@18"
-  }
+    password: "PRINCE@18",
+  },
 ];
 
-export const setLoacalStorage = ( ) =>{
-    localStorage.setItem('employee',JSON.stringify(employee))
-    localStorage.setItem('admin',JSON.stringify(admin))
-}
-export const getLoacalStorage = ( ) =>{
- const employee = JSON.parse(localStorage.getItem('employee'))
- const admin = JSON.parse(localStorage.getItem('admin'))
-//  console.log(employee,admin)
+export const setLoacalStorage = () => {
+  localStorage.setItem("employee", JSON.stringify(employee));
+  localStorage.setItem("admin", JSON.stringify(admin));
+};
+export const getLoacalStorage = () => {
+  const employee = JSON.parse(localStorage.getItem('employee'));
+  const admin = JSON.parse(localStorage.getItem('admin'));
 
- 
-}
+  return {employee,admin};
+};
+
