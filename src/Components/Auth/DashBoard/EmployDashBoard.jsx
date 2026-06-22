@@ -1,6 +1,6 @@
 import React from "react";
 import EmployHeader from "../Others/EmployHeader";
-import EmpTaskList from "../Others/EmpTaskList";
+import EmpTaskList from "../TaskList/EmpTaskList";
 import EmpTask from "../Others/EmpTask";
 
 const EmployPanel = ({ data}) => {

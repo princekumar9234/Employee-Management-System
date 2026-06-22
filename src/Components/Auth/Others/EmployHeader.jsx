@@ -1,7 +1,6 @@
 import React from 'react'
 
 const EmployHeader = ({data}) => {
-  console.log(data)
   return (
     <div>
       <div className='flex item-end justify-between '>
