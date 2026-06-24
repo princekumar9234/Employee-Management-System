@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Eye,EyeOff } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 
 const Login = ({ handleLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false)
+  const [showPassword, setShowPassword] = useState(false);
   const handleForm = (e) => {
     e.preventDefault();
     handleLogin(email, password);
@@ -45,7 +45,7 @@ const Login = ({ handleLogin }) => {
             />
             <button
               type="button"
-              onClick={() => setShowPassword(!showPassword)}  // click handler to toggle state
+              onClick={() => setShowPassword(!showPassword)} // click handler to toggle state
               className="absolute right-4 text-emerald-600 hover:text-emerald-400 focus:outline-none cursor-pointer flex items-center justify-center"
             >
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}

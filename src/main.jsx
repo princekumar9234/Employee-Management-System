@@ -4,13 +4,10 @@ import "./index.css";
 import App from "./App.jsx";
 import AuthContext from "./Context/AuthContext.jsx";
 
-
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-   
-      <AuthContext>
-        <App />
-      </AuthContext>
-   
+    <AuthContext>
+      <App />
+    </AuthContext>
   </StrictMode>,
 );

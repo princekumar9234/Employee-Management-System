@@ -8,7 +8,7 @@ const AuthContext = ({ children }) => {
 
   useEffect(() => {
     // Pehle check karo ki data already hai ya nahi, agar nahi hai toh set karo
-    if (!localStorage.getItem('employee') || !localStorage.getItem('admin')) {
+    if (!localStorage.getItem("employee") || !localStorage.getItem("admin")) {
       setLoacalStorage();
     }
     const { employee } = getLoacalStorage();

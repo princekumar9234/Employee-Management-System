@@ -29,4 +29,3 @@ const EmpTask = ({ data }) => {
 };
 
 export default EmpTask;
-
